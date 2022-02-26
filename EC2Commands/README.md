@@ -1,5 +1,11 @@
 # EC2 Commands
 
+## copy and login commands
+```
+ssh -i Example.pem ec2-user@public-ipv4-address
+scp -i Example.pem -r file/folder-path ec2-user@public-ipv4-address:~
+```
+
 ## Setting up docker 
 
 ```
