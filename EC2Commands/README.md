@@ -2,7 +2,7 @@
 
 ## copy and login commands
 ```
-ssh{green} -i Example.pem ec2-user@public-ipv4-address
+ssh -i Example.pem ec2-user@public-ipv4-address
 scp -i Example.pem -r file/folder-path ec2-user@public-ipv4-address:~
 ```
 
