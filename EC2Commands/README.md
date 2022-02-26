@@ -1,5 +1,5 @@
 # EC2 \textcolor{yellow}{yellow} Commands
-<h1 style="color:Tomato">Tomato</h1>
+<h1 style="color:Tomato;">Tomato</h1>
 ## copy and login commands
 ```
 ssh -i Example.pem ec2-user@public-ipv4-address
