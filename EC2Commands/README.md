@@ -1,4 +1,4 @@
-# EC2{yellow} Commands
+# EC2 \textcolor{yellow}{yellow} Commands
 
 ## copy and login commands
 ```
