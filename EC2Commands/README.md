@@ -1,4 +1,4 @@
-# EC2 Commands
+# EC2{yellow} Commands
 
 ## copy and login commands
 ```
