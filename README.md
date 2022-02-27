@@ -105,3 +105,21 @@ Classic ports to know
 443 = HTTPS - access secured websites
 3389 = RDP (Remote Desktop Protocol) - log into a Windows instance 
 
+## EC2 Instance Storage 
+
+**_EBS VOLUME_**
+
+- An Elastic BLock Store is a network drive you can attach to your instances  
+while they run
+- It allows your instances to persist data, even after their termination
+- They can only be mounted to **One instance at a time** 
+- They are bound to a specific availaibility zone 
+- Free Tier: 30GB of free EBS Storage of type General Purpose(SSD) or Magnetic per month 
+- By default only the root EBS Volume will be deleted once we delete the ec2 instance associated with it and the extra EBS Volume attached needs to be delete manually 
+
+**EBS Snapshots**
+
+- Make a backup (snapshot) of your EBS Volume at a point in time 
+- Not necessary to detach volume to do snapshot, but recommended 
+- Can copy snapshots across Availaibility Zones or Regions 
+ 
