@@ -11,7 +11,6 @@
 	    C -->|One| D[Result one]
 	    C -->|Two| E[Result two]
 	```
-	
 </details>
 <details>
 	<summary><h2>AWS Code Pipeline</h2></summary>
