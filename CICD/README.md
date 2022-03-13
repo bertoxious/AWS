@@ -8,6 +8,7 @@ A[Push code to Code Repository] -->B[Get Code build and test]
 ```
 ## Continuous Delievery
 ```mermaid
+graph LR
 A[Code Repository] -->B[Build Server]
 	B-->C[Deployment Server]
 	C-->D[Application Server]
