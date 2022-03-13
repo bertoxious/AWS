@@ -2,6 +2,7 @@
 <details>
 	<summary><h2>AWS Code Commit</h2></summary>
 
+	
 	```mermaid
 	graph LR
 	A[Hard edge] -->B(Round edge)
