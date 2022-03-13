@@ -1,16 +1,14 @@
 # AWS CICD 
 
-
+```mermaid
+	graph LR
+	A[Push code to Code Repository] -->B[Get Code build and test]
+	    B --> C[Tell developer results of build]
+	    C -->A
+	```
 <details>
 	<summary><h2>AWS Code Commit</h2></summary>
 	<br>
-	```mermaid
-	graph LR
-	A[Hard edge] -->B(Round edge)
-	    B --> C{Decision}
-	    C -->|One| D[Result one]
-	    C -->|Two| E[Result two]
-	```
 </details>
 <details>
 	<summary><h2>AWS Code Pipeline</h2></summary>
