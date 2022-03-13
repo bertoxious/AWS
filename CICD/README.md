@@ -4,7 +4,7 @@
 
 	```sequence
 	Developer -> Code Repository: Pushing code to the repo
-	Code Repository -> Build Server: Get the code build and test
+	Code Repository --> Build Server: Get the code build and test
 	Build Server --> Developer: Tell developer results of the build
 	```
 </details>
