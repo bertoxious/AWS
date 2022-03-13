@@ -116,6 +116,12 @@ while they run
 - They are bound to a specific availaibility zone 
 - Free Tier: 30GB of free EBS Storage of type General Purpose(SSD) or Magnetic per month 
 - By default only the root EBS Volume will be deleted once we delete the ec2 instance associated with it and the extra EBS Volume attached needs to be delete manually 
+- *_Types of EBS Volume_*:
+  - gp2/gp3 : General Purpose SSD Volume that balances price and performance for a wide variety of workloads.
+  - io1/io2 : Highest performance SSD volume for mission-critical low-latency or high-throughput workloads.
+  - st1 : Low Cost HDD volume designed for frequently accessed, throughput intensive worloads
+  - st2 : Lowest Cost HDD Voluem desigend for less frequently accessed workloads.
+ 
 
 **EBS Snapshots**
 
@@ -139,3 +145,13 @@ while they run
   - Build and AMI - this will also create EBS Snapshots 
   - Launch instances from other AMIs
  
+ ### EC2 Instance Store 
+ - EBS volumes are network drives with _good_ but _limited_ performance
+ - If you need a high performance hardware disk, use EC2 Instance Store 
+ - __Pros__: 
+   - Better Performance 
+   - Good for buffer/ cache/ scratch data/ temporary content
+ - Cons:
+  - EC2 Instance Store lose their storage if they're stopped.  
+  - Risk of data loss if hardware fails
+  - Backups and Replication are your responsibility 
