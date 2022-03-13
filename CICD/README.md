@@ -1,11 +1,12 @@
 # AWS CICD 
-
+## Continuous Integration
 ```mermaid
 graph LR
 A[Push code to Code Repository] -->B[Get Code build and test]
     B --> C[Tell developer results of build]
     C -->A
 ```
+## Continuous Delievery
 <details>
 	<summary><h2>AWS Code Commit</h2></summary>
 	<br>
