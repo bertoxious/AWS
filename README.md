@@ -122,4 +122,20 @@ while they run
 - Make a backup (snapshot) of your EBS Volume at a point in time 
 - Not necessary to detach volume to do snapshot, but recommended 
 - Can copy snapshots across Availaibility Zones or Regions 
+
+**AMI (_Amazon Machine Image_)**
+
+- These are customization of an EC2 instance 
+  - You add your own software, configuration, operating system, monitoring etc. 
+  - Faster boot, configuration time because all your software is pre-packaged. 
+- AMI are built for a specific region (and can be copied across regions)
+- We can launch EC2 instances from
+  - _Public AMI_: Provided by AWS
+  - _Your own AMI_: You make and maintain them yourself
+  - _An AWS Marketplace AMI_: An AMI someone else made (and potentially sells)
+- _AMI Process From an EC2 instance_: 
+  - Start an EC2 instance and customize it 
+  - Stop the instance for data integrity 
+  - Build and AMI - this will also create EBS Snapshots 
+  - Launch instances from other AMIs
  
