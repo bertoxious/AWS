@@ -2,10 +2,12 @@
 <details>
 	<summary><h2>AWS Code Commit</h2></summary>
 
-	```sequence
-	Developer -> Code Repository: Pushing code to the repo
-	Code Repository --> Build Server: Get the code build and test
-	Build Server --> Developer: Tell developer results of the build
+	```mermaid
+	graph LR
+	A[Hard edge] -->B(Round edge)
+	    B --> C{Decision}
+	    C -->|One| D[Result one]
+	    C -->|Two| E[Result two]
 	```
 </details>
 <details>
