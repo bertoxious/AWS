@@ -7,6 +7,9 @@ A[Push code to Code Repository] -->B[Get Code build and test]
     C -->A
 ```
 ## Continuous Delievery
+```mermaid
+A[Code Repository] -->B[Build Server] -->C[Deployment Server] -->D[Application Server]
+```
 <details>
 	<summary><h2>AWS Code Commit</h2></summary>
 	<br>
