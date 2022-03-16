@@ -162,6 +162,34 @@ while they run
   - High Availability means running your application in atleast two data centers or Availability zones.
 ### Load Balancing
   - These are servers that forward internet traffic to multiple servers(EC2 instances) downstream
+  - Spread across multiple downstream instances
+  - Expose a single point of access(DNS) to your application
+  - Seamlessly handle failures of downstream instances
+  - Do regular health checkups for your instances so it may know when not to send traffic to your instances
+  - Provide SSL termination(HTTPS) for your websites
+  - Enforce stickiness with cookies
+  - High availability across zones
+  - Separate public traffic from private traffic 
+  - __Why to Use__
+    - It is a managed load balancer
+    - AWS guarantess it will be working
+    - AWS take care of upgrades, maintainance and high avaialability
+    - It costs less to setup your own load balancer but it will be a lot more effor on your end
+    - The health checkup is done on a port and a route _/health_ which is common 
+    - If response is not 200 Ok then instance is unhealthy
+  - Load Balancer Securtiy groups i.e only allow ec2 instances to accept traffic from load balancer 
+```mermaid
+graph LR
+A[Users]--HTTPS/HTTP from anywhere --> B[Elastic Load Balancer]
+  B --HTTP restricted to Load Balancer--> C[EC2 Instance]
+**_Types of Load Balancers_**
+  - Classic Load Balancer(v1- old generation -2009)
+    - HTTP, HTTPS, TCP
+  - Application Load Balancer(v2 - new generation 2016)
+    - HTTP, HTTPS, WebSocket
+  - Network Load Balancer(v2 - new generation 2017)
+    - TCP, TLS(Secured TCP) & UDP
+  - We can setup public(external) or private(internal) Load Balancers
 ```mermaid
 graph TD
 A[User 1] --> D
