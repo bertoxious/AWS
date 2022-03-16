@@ -178,7 +178,7 @@ while they run
     - The health checkup is done on a port and a route _/health_ which is common 
     - If response is not 200 Ok then instance is unhealthy
   - Load Balancer Securtiy groups i.e only allow ec2 instances to accept traffic from load balancer 
-  - _<span style="color:red;">Load Balancers can scale but not intantaneously</span>_
+  - _<span style="color:red">Load Balancers can scale but not intantaneously</span>_
 ```mermaid
 flowchart LR
 A[Users]--HTTPS/HTTP from anywhere --> B[Elastic Load Balancer]
