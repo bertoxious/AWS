@@ -155,3 +155,15 @@ while they run
   - EC2 Instance Store lose their storage if they're stopped.  
   - Risk of data loss if hardware fails
   - Backups and Replication are your responsibility 
+### Scalability and High Availaibility
+  - Scalability means application can handle greater loads by adapting Vertical Scalability or Horizontal Scalability
+    - _Vertical Scalability_ Increase the size of the instance ex. switching from t2.micro to t2.large
+    - _Horizontal Scalability_ Increase the no. of instances/systems for application ex. increasing the count of t2.micro
+  - High Availability means running your application in atleast two data centers or Availability zones.
+### Load Balancing
+  - These are servers that forward internet traffic to multiple servers(EC2 instances) downstream
+```mermaid
+A[Load Balancer] -->B[EC2 Instance]
+  A-->C[EC2 Instance]
+  A-->D[EC2 Instance]
+```
