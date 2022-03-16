@@ -182,6 +182,7 @@ while they run
 flowchart LR
 A[Users]--HTTPS/HTTP from anywhere --> B[Elastic Load Balancer]
   B --HTTP restricted to Load Balancer--> C[EC2 Instance]
+```
 **_Types of Load Balancers_**
   - Classic Load Balancer(v1- old generation -2009)
     - HTTP, HTTPS, TCP
