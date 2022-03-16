@@ -179,7 +179,7 @@ while they run
     - If response is not 200 Ok then instance is unhealthy
   - Load Balancer Securtiy groups i.e only allow ec2 instances to accept traffic from load balancer 
 ```mermaid
-graph LR
+flowchart LR
 A[Users]--HTTPS/HTTP from anywhere --> B[Elastic Load Balancer]
   B --HTTP restricted to Load Balancer--> C[EC2 Instance]
 **_Types of Load Balancers_**
