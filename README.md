@@ -164,7 +164,7 @@ while they run
   - These are servers that forward internet traffic to multiple servers(EC2 instances) downstream
 ```mermaid
 graph TD
-A[Load Balancer] <-->B[EC2 Instance]
-  A<-->C[EC2 Instance]
-  A<-->D[EC2 Instance]
+A[Load Balancer] -->B[EC2 Instance]
+  A-->C[EC2 Instance]
+  A-->D[EC2 Instance]
 ```
