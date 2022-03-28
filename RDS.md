@@ -20,3 +20,16 @@ Postgres, MySQL, MariaDB, Oracle, Microsoft SQL Server, Aurora(AWS Propreitary D
 - 7 days retention period that can be upgraded to 35 days
 
 #### Also have DB Snapshots that are manually triggered by user and retention of these backup snapshots as long as you want
+
+#### RDS Read replicas for read scalability
+- Read replicas helps to scale your reads
+- We can create upto 5 read replicas, they can be within same Availaibility Zone, cross AZs or cross Region
+- Replication is **ASYNC** so reads are eventually consistent 
+- Read Replicas are used for ONLY READ STATEMENTS so even in a production database it won't effect the original contents
+
+### Read replicas witin the same region no need to pay fee 
+us-east-1a to us-east-1b is **FREE**
+us-east-1a to eu-west-1b is **CHARGEABLE**
+
+### Read Replicas can be setup across Mutiple Availaibility Zones for Disaster Recovery
+### No need to stop DB when switcing from Single AZ to Multiple AZ
