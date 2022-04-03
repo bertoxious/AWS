@@ -201,7 +201,7 @@ A[User 1] --> D
   D-->F[EC2 Instance]
   D-->G[EC2 Instance]
 ```
-``console
+```console
 sudo yum install -y bind-utils
 ```
 this comand will install both nslookup and dig 
