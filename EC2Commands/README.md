@@ -58,3 +58,9 @@ sudo systemctl status docker.service
 sudo groupadd docker 
 sudo usermod -aG docker $USER
 ```
+
+## if got permission denied while docker compose up
+
+```
+sudo chmod 666 /var/run/docker.sock
+```
